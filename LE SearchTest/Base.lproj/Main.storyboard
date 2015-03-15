@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UYO-Jc-XAD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D98g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UYO-Jc-XAD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -1071,6 +1071,8 @@
                                 <exclude reference="1cn-lX-sNR"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="FON-b9-gXv"/>
+                                <exclude reference="W0v-Af-arJ"/>
                                 <exclude reference="2Ae-kA-xZ7"/>
                                 <exclude reference="SLu-dF-4Lh"/>
                                 <exclude reference="YxO-um-Hju"/>
@@ -1087,8 +1089,6 @@
                                 <exclude reference="nLJ-2w-rIx"/>
                                 <exclude reference="QyI-Ib-8nT"/>
                                 <exclude reference="exc-bD-RMc"/>
-                                <exclude reference="FON-b9-gXv"/>
-                                <exclude reference="W0v-Af-arJ"/>
                                 <exclude reference="3VX-6S-Xba"/>
                             </mask>
                         </variation>
@@ -1097,6 +1097,8 @@
                                 <include reference="1cn-lX-sNR"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="FON-b9-gXv"/>
+                                <include reference="W0v-Af-arJ"/>
                                 <include reference="2Ae-kA-xZ7"/>
                                 <include reference="SLu-dF-4Lh"/>
                                 <include reference="YxO-um-Hju"/>
@@ -1113,8 +1115,6 @@
                                 <include reference="nLJ-2w-rIx"/>
                                 <include reference="QyI-Ib-8nT"/>
                                 <include reference="exc-bD-RMc"/>
-                                <include reference="FON-b9-gXv"/>
-                                <include reference="W0v-Af-arJ"/>
                                 <include reference="3VX-6S-Xba"/>
                             </mask>
                         </variation>
@@ -1558,6 +1558,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZSF-ul-nS4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3G3-n5-MXo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You is logged in!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXg-YI-XuA">
