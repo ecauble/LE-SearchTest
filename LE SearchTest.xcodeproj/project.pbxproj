@@ -25,10 +25,11 @@
 		A13F5C801AB25FD7005EE768 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F5C671AB25CCB005EE768 /* ParseFacebookUtils.framework */; };
 		A13F5C811AB25FD7005EE768 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13F5C681AB25CCB005EE768 /* ParseUI.framework */; };
 		A14313DE1AB51F6F007D5461 /* swiftLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14313DC1AB51F6F007D5461 /* swiftLogin.xcdatamodeld */; };
-		A15810DF1AB4F75500F6B8BC /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15810DB1AB4F75500F6B8BC /* Locksmith.swift */; };
-		A15810E01AB4F75500F6B8BC /* LocksmithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15810DC1AB4F75500F6B8BC /* LocksmithRequest.swift */; };
-		A15810E11AB4F75500F6B8BC /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15810DD1AB4F75500F6B8BC /* LogInViewController.swift */; };
-		A15810E21AB4F75500F6B8BC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15810DE1AB4F75500F6B8BC /* Reachability.swift */; };
+		A14313E31AB533FE007D5461 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14313E11AB533FE007D5461 /* LogInViewController.swift */; };
+		A14313E41AB533FE007D5461 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14313E21AB533FE007D5461 /* Reachability.swift */; };
+		A14313E61AB53411007D5461 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14313E51AB53411007D5461 /* DatePickerDialog.swift */; };
+		A14313E91AB53468007D5461 /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14313E71AB53468007D5461 /* Locksmith.swift */; };
+		A14313EA1AB53468007D5461 /* LocksmithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14313E81AB53468007D5461 /* LocksmithRequest.swift */; };
 		A15FF06D1AA65D2200EEF172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FF06C1AA65D2200EEF172 /* AppDelegate.swift */; };
 		A15FF06F1AA65D2200EEF172 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FF06E1AA65D2200EEF172 /* SearchTableViewController.swift */; };
 		A15FF0721AA65D2200EEF172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15FF0701AA65D2200EEF172 /* Main.storyboard */; };
@@ -36,7 +37,6 @@
 		A15FF0771AA65D2200EEF172 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15FF0751AA65D2200EEF172 /* LaunchScreen.xib */; };
 		A15FF0831AA65D2200EEF172 /* LE_SearchTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FF0821AA65D2200EEF172 /* LE_SearchTestTests.swift */; };
 		A1AF89A51AB4BB9B00EF6063 /* NewEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF89A41AB4BB9B00EF6063 /* NewEventController.swift */; };
-		A1AF89A71AB4C0F100EF6063 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF89A61AB4C0F100EF6063 /* DatePickerDialog.swift */; };
 		A1D389DA1AACEA4A004E7A1D /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D389CC1AACEA4A004E7A1D /* FAKFontAwesome.m */; };
 		A1D389DB1AACEA4A004E7A1D /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D389CE1AACEA4A004E7A1D /* FAKFoundationIcons.m */; };
 		A1D389DC1AACEA4A004E7A1D /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D389D01AACEA4A004E7A1D /* FAKIcon.m */; };
@@ -85,10 +85,11 @@
 		A13F5C791AB25FB9005EE768 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A13F5C7B1AB25FC1005EE768 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A14313DD1AB51F6F007D5461 /* swiftLogin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftLogin.xcdatamodel; sourceTree = "<group>"; };
-		A15810DB1AB4F75500F6B8BC /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locksmith.swift; path = ../../../Downloads/swiftLogin/Locksmith.swift; sourceTree = "<group>"; };
-		A15810DC1AB4F75500F6B8BC /* LocksmithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocksmithRequest.swift; path = ../../../Downloads/swiftLogin/LocksmithRequest.swift; sourceTree = "<group>"; };
-		A15810DD1AB4F75500F6B8BC /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../../../Downloads/swiftLogin/LogInViewController.swift; sourceTree = "<group>"; };
-		A15810DE1AB4F75500F6B8BC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = ../../../Downloads/swiftLogin/Reachability.swift; sourceTree = "<group>"; };
+		A14313E11AB533FE007D5461 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		A14313E21AB533FE007D5461 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A14313E51AB53411007D5461 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		A14313E71AB53468007D5461 /* Locksmith.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locksmith.swift; sourceTree = "<group>"; };
+		A14313E81AB53468007D5461 /* LocksmithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksmithRequest.swift; sourceTree = "<group>"; };
 		A15FF0671AA65D2200EEF172 /* LE SearchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LE SearchTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15FF06B1AA65D2200EEF172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15FF06C1AA65D2200EEF172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		A15FF0811AA65D2200EEF172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15FF0821AA65D2200EEF172 /* LE_SearchTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_SearchTestTests.swift; sourceTree = "<group>"; };
 		A1AF89A41AB4BB9B00EF6063 /* NewEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventController.swift; sourceTree = "<group>"; };
-		A1AF89A61AB4C0F100EF6063 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerDialog.swift; path = "../../../Downloads/DatePickerDialog-iOS-Swift-master/Demo/Library/DatePickerDialog.swift"; sourceTree = "<group>"; };
 		A1D389CB1AACEA4A004E7A1D /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		A1D389CC1AACEA4A004E7A1D /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		A1D389CD1AACEA4A004E7A1D /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -184,8 +184,8 @@
 		A15810E31AB4F78400F6B8BC /* LockSmith */ = {
 			isa = PBXGroup;
 			children = (
-				A15810DB1AB4F75500F6B8BC /* Locksmith.swift */,
-				A15810DC1AB4F75500F6B8BC /* LocksmithRequest.swift */,
+				A14313E71AB53468007D5461 /* Locksmith.swift */,
+				A14313E81AB53468007D5461 /* LocksmithRequest.swift */,
 			);
 			name = LockSmith;
 			sourceTree = "<group>";
@@ -217,15 +217,15 @@
 				A1D389CA1AACEA4A004E7A1D /* FontAwesomeKit */,
 				A1E7539F1AACE35500F7492E /* SBGestureTableView */,
 				A1F39A311AB248C500B33E69 /* MenuController.swift */,
-				A15810DD1AB4F75500F6B8BC /* LogInViewController.swift */,
+				A14313E11AB533FE007D5461 /* LogInViewController.swift */,
+				A14313E21AB533FE007D5461 /* Reachability.swift */,
 				A15FF06E1AA65D2200EEF172 /* SearchTableViewController.swift */,
 				A1E8C7BE1AA6D72E00FC78ED /* DetailViewController.swift */,
 				A1AF89A41AB4BB9B00EF6063 /* NewEventController.swift */,
+				A14313E51AB53411007D5461 /* DatePickerDialog.swift */,
 				A1E34E5D1AB414FF001A7B70 /* InviteController.swift */,
 				A13F5C611AB25CAE005EE768 /* SignUpController.swift */,
-				A15810DE1AB4F75500F6B8BC /* Reachability.swift */,
 				A15FF06C1AA65D2200EEF172 /* AppDelegate.swift */,
-				A1AF89A61AB4C0F100EF6063 /* DatePickerDialog.swift */,
 				A15FF0701AA65D2200EEF172 /* Main.storyboard */,
 				A15FF0731AA65D2200EEF172 /* Images.xcassets */,
 				A15FF0751AA65D2200EEF172 /* LaunchScreen.xib */,
@@ -420,6 +420,8 @@
 			files = (
 				A1150C471AB23E0B000EB9D2 /* SWRevealViewController.m in Sources */,
 				A1E753A51AACE35500F7492E /* SBGestureTableViewCell.swift in Sources */,
+				A14313E31AB533FE007D5461 /* LogInViewController.swift in Sources */,
+				A14313EA1AB53468007D5461 /* LocksmithRequest.swift in Sources */,
 				A1D389DC1AACEA4A004E7A1D /* FAKIcon.m in Sources */,
 				A1D389DE1AACEA4A004E7A1D /* FAKZocial.m in Sources */,
 				A14313DE1AB51F6F007D5461 /* swiftLogin.xcdatamodeld in Sources */,
@@ -429,17 +431,15 @@
 				A1E753A61AACE35500F7492E /* SBGestureTableViewCellAction.swift in Sources */,
 				A15FF06D1AA65D2200EEF172 /* AppDelegate.swift in Sources */,
 				A1E753A71AACE35500F7492E /* SBGestureTableViewCellSideView.swift in Sources */,
+				A14313E91AB53468007D5461 /* Locksmith.swift in Sources */,
 				A1AF89A51AB4BB9B00EF6063 /* NewEventController.swift in Sources */,
-				A1AF89A71AB4C0F100EF6063 /* DatePickerDialog.swift in Sources */,
-				A15810E01AB4F75500F6B8BC /* LocksmithRequest.swift in Sources */,
+				A14313E41AB533FE007D5461 /* Reachability.swift in Sources */,
 				A1F39A321AB248C500B33E69 /* MenuController.swift in Sources */,
+				A14313E61AB53411007D5461 /* DatePickerDialog.swift in Sources */,
 				A1D389DA1AACEA4A004E7A1D /* FAKFontAwesome.m in Sources */,
 				A1E753A41AACE35500F7492E /* SBGestureTableView.swift in Sources */,
 				A1D389DD1AACEA4A004E7A1D /* FAKIonIcons.m in Sources */,
-				A15810E11AB4F75500F6B8BC /* LogInViewController.swift in Sources */,
-				A15810E21AB4F75500F6B8BC /* Reachability.swift in Sources */,
 				A1E8C7BF1AA6D72E00FC78ED /* DetailViewController.swift in Sources */,
-				A15810DF1AB4F75500F6B8BC /* Locksmith.swift in Sources */,
 				A1D389DB1AACEA4A004E7A1D /* FAKFoundationIcons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
