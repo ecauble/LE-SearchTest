@@ -15,15 +15,10 @@ class logInViewController : UIViewController {
     let key = "myKey"
     
     @IBOutlet var LogInLabel: UILabel!
-    
     @IBOutlet var logInUsername: UITextField!
-    
     @IBOutlet var logInPassword: UITextField!
-    
     @IBOutlet var logInSavePasswordLabel: UILabel!
-    
     @IBOutlet var logInsavePasswordSwitch: UISwitch!
-    
     @IBAction func logInActionButton(sender: AnyObject) {
         
         if logInUsername.text != "" && logInPassword.text != ""
@@ -44,13 +39,12 @@ class logInViewController : UIViewController {
                 }
                 
             } else {
-                self.performSegueWithIdentifier("showLogin", sender: self)
+                self.performSegueWithIdentifier("LogInSegue", sender: self)
             }
         } else {
             self.LogInLabel.text = "All Fields Required"
         }
-        
-    }
+      }
 
     
 }

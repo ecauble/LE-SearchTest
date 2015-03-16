@@ -43,7 +43,7 @@ class NewEventController: UIViewController {
         self.startTimeTextField.resignFirstResponder()
     }
     
-    
+    //TODO: - ensure endtime cannot be before starttime
    @IBAction func endTimeTouched(sender: AnyObject)
     {
         
@@ -66,7 +66,7 @@ class NewEventController: UIViewController {
         }
     }
 
-    
+    //returns a String in the correct date format
     func formatDate(eventTime : NSDate) -> String{
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .MediumStyle

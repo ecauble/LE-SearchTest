@@ -1,17 +1,21 @@
 //
-//  InviteController.swift
+//  ConfirmEventController.swift
 //  LE SearchTest
 //
-//  Created by Eric Cauble on 3/14/15.
+//  Created by Eric Cauble on 3/15/15.
 //  Copyright (c) 2015 Eric Cauble. All rights reserved.
 //
 
 import UIKit
 
-class InviteController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ConfirmEventController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-   //REMOVE
+    
+   
+    
+    
+    //REMOVE
     var nameList : [String] = ["Jay Barker", "Eric Cauble", "Wes Turner"]
     var imgList : [String] = ["jay","eric","wes"]
     var eventTitle = String()
@@ -20,12 +24,12 @@ class InviteController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     override func viewDidLoad(){
         super.viewDidLoad()
-
+        
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-         
+            
         }
         //title passed from previous controller as
         self.title = "Invite to \(eventTitle)"
@@ -46,7 +50,7 @@ class InviteController: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-   
+    
     deinit
     {
         "InviteController was deinitialized"

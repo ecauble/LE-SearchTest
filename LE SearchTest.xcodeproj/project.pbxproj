@@ -53,6 +53,7 @@
 		A1E753A71AACE35500F7492E /* SBGestureTableViewCellSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E753A31AACE35500F7492E /* SBGestureTableViewCellSideView.swift */; };
 		A1E8C7BF1AA6D72E00FC78ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8C7BE1AA6D72E00FC78ED /* DetailViewController.swift */; };
 		A1F39A321AB248C500B33E69 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F39A311AB248C500B33E69 /* MenuController.swift */; };
+		A1FE62E41AB578C60092A6B6 /* ConfirmEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE62E31AB578C60092A6B6 /* ConfirmEventController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		A1E753A81AACE36C00F7492E /* LE SearchTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LE SearchTest-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A1E8C7BE1AA6D72E00FC78ED /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A1F39A311AB248C500B33E69 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		A1FE62E31AB578C60092A6B6 /* ConfirmEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmEventController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +224,9 @@
 				A15FF06E1AA65D2200EEF172 /* SearchTableViewController.swift */,
 				A1E8C7BE1AA6D72E00FC78ED /* DetailViewController.swift */,
 				A1AF89A41AB4BB9B00EF6063 /* NewEventController.swift */,
-				A14313E51AB53411007D5461 /* DatePickerDialog.swift */,
+				A1FE62E31AB578C60092A6B6 /* ConfirmEventController.swift */,
 				A1E34E5D1AB414FF001A7B70 /* InviteController.swift */,
+				A14313E51AB53411007D5461 /* DatePickerDialog.swift */,
 				A13F5C611AB25CAE005EE768 /* SignUpController.swift */,
 				A15FF06C1AA65D2200EEF172 /* AppDelegate.swift */,
 				A15FF0701AA65D2200EEF172 /* Main.storyboard */,
@@ -429,6 +432,7 @@
 				A13F5C621AB25CAE005EE768 /* SignUpController.swift in Sources */,
 				A15FF06F1AA65D2200EEF172 /* SearchTableViewController.swift in Sources */,
 				A1E753A61AACE35500F7492E /* SBGestureTableViewCellAction.swift in Sources */,
+				A1FE62E41AB578C60092A6B6 /* ConfirmEventController.swift in Sources */,
 				A15FF06D1AA65D2200EEF172 /* AppDelegate.swift in Sources */,
 				A1E753A71AACE35500F7492E /* SBGestureTableViewCellSideView.swift in Sources */,
 				A14313E91AB53468007D5461 /* Locksmith.swift in Sources */,

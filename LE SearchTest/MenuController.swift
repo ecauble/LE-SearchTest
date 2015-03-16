@@ -16,21 +16,19 @@ class MenuController: UITableViewController {
     let service = "Locksmith"
     let userAccount = "LocksmithUser"
     let key = "myKey"
-
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+
         let (dictionary, error) = Locksmith.loadData(forKey: key, inService: service, forUserAccount: userAccount)
         
         if let dictionary = dictionary {
             userNameLabel.text = PFUser.currentUser().username
-        
-
-
-
-            //self.performSegueWithIdentifier("loggedInSegue", sender: self)
-        } else {
+        }
+        else
+        {
          // self.performSegueWithIdentifier("showLogin", sender: self)
             userNameLabel.text = ""
 
@@ -38,11 +36,14 @@ class MenuController: UITableViewController {
         
     }
     
+
     
+
     
     @IBAction func logOutUser(sender: AnyObject) {
         Locksmith.deleteData(forKey: key, inService: service, forUserAccount: userAccount)
         logOutButton.setTitle("Log in", forState: UIControlState.Normal)
+        PFUser.logOut()
     }
  
     
