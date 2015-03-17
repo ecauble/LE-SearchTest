@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UYO-Jc-XAD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UYO-Jc-XAD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -34,7 +34,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="2Ly-rj-si6"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
@@ -59,7 +59,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="111" id="YWl-h5-PFP"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="default">
@@ -159,6 +159,45 @@
             </objects>
             <point key="canvasLocation" x="-1095" y="501"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7W3-80-HnJ">
+            <objects>
+                <navigationController id="eKk-Nd-R78" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="988-8y-9cr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ALE-HY-l8g" kind="relationship" relationship="rootViewController" id="NfO-Gn-IQe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWX-4Z-F4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1887" y="1241"/>
+        </scene>
+        <!--Event Confirm Controller-->
+        <scene sceneID="4wm-zs-Pdq">
+            <objects>
+                <viewController id="ALE-HY-l8g" customClass="EventConfirmController" customModule="LE_SearchTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7L1-Qz-Hwu"/>
+                        <viewControllerLayoutGuide type="bottom" id="RHr-Or-nKj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n6i-pB-8XO">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0s4-qf-LqM">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="IRi-QX-a3T"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="IRi-QX-a3T" id="Fbs-hG-Kiv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4s-6O-1sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1030.5" y="1241"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="zUv-lW-LeW">
             <objects>
@@ -224,7 +263,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-nF-j7w">
                                 <rect key="frame" x="132" y="348" width="336" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -765,6 +804,9 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="eKk-Nd-R78" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="gvQ-7M-WJv"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hYX-re-04x">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -1549,9 +1591,9 @@
                                 <exclude reference="cXg-YI-XuA"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="epy-e9-pxU"/>
                                 <exclude reference="MZn-pD-MUp"/>
                                 <exclude reference="i6w-Kb-dov"/>
-                                <exclude reference="epy-e9-pxU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1559,9 +1601,9 @@
                                 <include reference="cXg-YI-XuA"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="epy-e9-pxU"/>
                                 <include reference="MZn-pD-MUp"/>
                                 <include reference="i6w-Kb-dov"/>
-                                <include reference="epy-e9-pxU"/>
                             </mask>
                         </variation>
                     </view>
