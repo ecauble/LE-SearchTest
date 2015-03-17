@@ -37,6 +37,7 @@
 		A15FF0771AA65D2200EEF172 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15FF0751AA65D2200EEF172 /* LaunchScreen.xib */; };
 		A15FF0831AA65D2200EEF172 /* LE_SearchTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15FF0821AA65D2200EEF172 /* LE_SearchTestTests.swift */; };
 		A1AF89A51AB4BB9B00EF6063 /* NewEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF89A41AB4BB9B00EF6063 /* NewEventController.swift */; };
+		A1B71D711AB8E75B00F1D34D /* DooDooController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B71D701AB8E75B00F1D34D /* DooDooController.swift */; };
 		A1D389DA1AACEA4A004E7A1D /* FAKFontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D389CC1AACEA4A004E7A1D /* FAKFontAwesome.m */; };
 		A1D389DB1AACEA4A004E7A1D /* FAKFoundationIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D389CE1AACEA4A004E7A1D /* FAKFoundationIcons.m */; };
 		A1D389DC1AACEA4A004E7A1D /* FAKIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D389D01AACEA4A004E7A1D /* FAKIcon.m */; };
@@ -102,6 +103,7 @@
 		A15FF0811AA65D2200EEF172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15FF0821AA65D2200EEF172 /* LE_SearchTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_SearchTestTests.swift; sourceTree = "<group>"; };
 		A1AF89A41AB4BB9B00EF6063 /* NewEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventController.swift; sourceTree = "<group>"; };
+		A1B71D701AB8E75B00F1D34D /* DooDooController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DooDooController.swift; sourceTree = "<group>"; };
 		A1D389CB1AACEA4A004E7A1D /* FAKFontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFontAwesome.h; sourceTree = "<group>"; };
 		A1D389CC1AACEA4A004E7A1D /* FAKFontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKFontAwesome.m; sourceTree = "<group>"; };
 		A1D389CD1AACEA4A004E7A1D /* FAKFoundationIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKFoundationIcons.h; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				A14313E51AB53411007D5461 /* DatePickerDialog.swift */,
 				A13F5C611AB25CAE005EE768 /* SignUpController.swift */,
 				A15FF06C1AA65D2200EEF172 /* AppDelegate.swift */,
+				A1B71D701AB8E75B00F1D34D /* DooDooController.swift */,
 				A15FF0701AA65D2200EEF172 /* Main.storyboard */,
 				A15FF0731AA65D2200EEF172 /* Images.xcassets */,
 				A15FF0751AA65D2200EEF172 /* LaunchScreen.xib */,
@@ -421,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B71D711AB8E75B00F1D34D /* DooDooController.swift in Sources */,
 				A1150C471AB23E0B000EB9D2 /* SWRevealViewController.m in Sources */,
 				A1E753A51AACE35500F7492E /* SBGestureTableViewCell.swift in Sources */,
 				A14313E31AB533FE007D5461 /* LogInViewController.swift in Sources */,
