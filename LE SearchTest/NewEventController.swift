@@ -8,16 +8,18 @@
 
 import UIKit
 
-class NewEventController: UIViewController {
-    
+class NewEventController: UIViewController, UITextFieldDelegate {
+    //MARK: - Outlets
     @IBOutlet weak var eventTitleTextField: UITextField!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var startTimeTextField: UITextField!
-    @IBOutlet weak var endTimeTextField: UITextField!
+    @IBOutlet weak var startTimeTextField: UIButton!
+    @IBOutlet weak var endTimeTextField: UIButton!
     
+    //MARK: - Varibales
     var datePicker = DatePickerDialog()
     var startTime = NSDate()
     var endTime = NSDate()
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -28,32 +30,34 @@ class NewEventController: UIViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        
+        var tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        self.view.addGestureRecognizer(tap)
+        eventTitleTextField.delegate = self
     }
     
-
+//MARK: - Actions
     @IBAction func startTimeTouched(sender: AnyObject)
     {
         DatePickerDialog().show(title: "DatePickerDialog", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .DateAndTime) {
             (date) -> Void in
-            self.startTimeTextField.text = "\(self.formatDate(date))"
+            self.startTimeTextField.setTitle("\(self.formatDate(date))", forState: nil)
             self.startTime = (date)
         }
         self.startTimeTextField.resignFirstResponder()
     }
     
-    //TODO: - ensure endtime cannot be before starttime
+    //MARK: - TODO: ensure endTime cannot be before startTime
    @IBAction func endTimeTouched(sender: AnyObject)
     {
         
         DatePickerDialog().show(title: "DatePickerDialog", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .DateAndTime) {
             (date) -> Void in
-            self.endTimeTextField.text = "\(self.formatDate(date))"
+            self.endTimeTextField.setTitle("\(self.formatDate(date))", forState: nil)
             self.endTime = (date)
         }
         self.endTimeTextField.resignFirstResponder()
-
+        var tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        self.view.addGestureRecognizer(tap)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
@@ -77,6 +81,22 @@ class NewEventController: UIViewController {
         
         var time = "\(dateFormatter.stringFromDate(eventTime)), \(timeFormatter.stringFromDate(eventTime))"
         return time
+    }
+    func textFieldShouldReturn(textField: UITextField!) -> Bool  
+    {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
+    func DismissKeyboard(){
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        self.view.endEditing(true)
+    }
+    
+
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        eventTitleTextField.resignFirstResponder()
+        return true;
     }
     
     deinit{
