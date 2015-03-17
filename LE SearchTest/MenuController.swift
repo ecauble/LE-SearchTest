@@ -53,9 +53,5 @@ class MenuController: UITableViewController {
     }
     
  
-    deinit{
-        println("menuView deinit")
-    }
-    
     
 }
