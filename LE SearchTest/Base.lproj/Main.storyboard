@@ -160,14 +160,22 @@
             <point key="canvasLocation" x="-1095" y="501"/>
         </scene>
         <!--Navigation Controller-->
+<<<<<<< HEAD
         <scene sceneID="7W3-80-HnJ">
             <objects>
                 <navigationController id="eKk-Nd-R78" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="988-8y-9cr">
+=======
+        <scene sceneID="fLz-Oz-WNp">
+            <objects>
+                <navigationController id="6hk-YS-Nnt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zeO-4j-noB">
+>>>>>>> origin/master
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="ALE-HY-l8g" kind="relationship" relationship="rootViewController" id="NfO-Gn-IQe"/>
                     </connections>
                 </navigationController>
@@ -197,6 +205,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4s-6O-1sl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1030.5" y="1241"/>
+=======
+                        <segue destination="qb9-ML-hQD" kind="relationship" relationship="rootViewController" id="uQn-iT-Xcx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KU6-Pe-CHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2202" y="1224"/>
+        </scene>
+        <!--Doo Doo Controller-->
+        <scene sceneID="zkq-4H-3gY">
+            <objects>
+                <viewController id="qb9-ML-hQD" customClass="DooDooController" customModule="LE_SearchTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F3q-c9-SQv"/>
+                        <viewControllerLayoutGuide type="bottom" id="srl-wz-JRQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ULu-aT-rCy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yN5-pF-bs9">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="Mxm-82-L8n"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Mxm-82-L8n" id="PHi-u9-ayp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uu0-N7-FSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1339.5" y="1219"/>
+>>>>>>> origin/master
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="zUv-lW-LeW">
@@ -882,6 +922,83 @@
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="mNV-Mv-C3H" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="UuV-m8-vsO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jnb-Px-7uD">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jnb-Px-7uD" id="Bxo-2q-z1a">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="gen_food" translatesAutoresizingMaskIntoConstraints="NO" id="j6g-Nc-12D">
+                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="FJh-ee-dJG"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="FJh-ee-dJG"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="FJh-ee-dJG"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DooDoo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-qZ-cZp">
+                                                    <rect key="frame" x="61" y="6" width="55" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="58" id="5FG-K8-WeZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="5FG-K8-WeZ"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="61" y="6" width="64" height="31"/>
+                                                        <mask key="constraints">
+                                                            <include reference="5FG-K8-WeZ"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="j6g-Nc-12D" firstAttribute="top" secondItem="Bxo-2q-z1a" secondAttribute="topMargin" constant="-4" id="HeZ-M8-rdK"/>
+                                                <constraint firstItem="DKs-qZ-cZp" firstAttribute="top" secondItem="Bxo-2q-z1a" secondAttribute="topMargin" constant="-2" id="KgV-hA-ewe"/>
+                                                <constraint firstItem="j6g-Nc-12D" firstAttribute="leading" secondItem="Bxo-2q-z1a" secondAttribute="leadingMargin" constant="10" id="Mmr-Qh-Jlh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DKs-qZ-cZp" secondAttribute="bottom" constant="-1" id="TMD-bh-noK"/>
+                                                <constraint firstItem="DKs-qZ-cZp" firstAttribute="leading" secondItem="j6g-Nc-12D" secondAttribute="trailing" constant="8" symbolic="YES" id="tIk-tS-RJH"/>
+                                                <constraint firstItem="j6g-Nc-12D" firstAttribute="centerY" secondItem="DKs-qZ-cZp" secondAttribute="centerY" id="vXN-kM-ebM"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="HeZ-M8-rdK"/>
+                                                    <exclude reference="Mmr-Qh-Jlh"/>
+                                                    <exclude reference="vXN-kM-ebM"/>
+                                                    <exclude reference="KgV-hA-ewe"/>
+                                                    <exclude reference="TMD-bh-noK"/>
+                                                    <exclude reference="tIk-tS-RJH"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="HeZ-M8-rdK"/>
+                                                    <include reference="Mmr-Qh-Jlh"/>
+                                                    <include reference="vXN-kM-ebM"/>
+                                                    <include reference="KgV-hA-ewe"/>
+                                                    <include reference="TMD-bh-noK"/>
+                                                    <include reference="tIk-tS-RJH"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="6hk-YS-Nnt" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ZDE-n1-ANU"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zpj-kv-L04">
@@ -1617,6 +1734,7 @@
         <image name="calendar-1" width="256" height="256"/>
         <image name="comments" width="1024" height="1024"/>
         <image name="cutlery" width="256" height="256"/>
+        <image name="gen_food" width="150" height="150"/>
         <image name="group icon" width="256" height="256"/>
         <image name="menu" width="22" height="22"/>
     </resources>
