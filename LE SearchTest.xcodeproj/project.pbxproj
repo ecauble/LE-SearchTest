@@ -216,8 +216,8 @@
 				A13F5C611AB25CAE005EE768 /* SignUpController.swift */,
 				A15FF06C1AA65D2200EEF172 /* AppDelegate.swift */,
 				A15FF0701AA65D2200EEF172 /* Main.storyboard */,
-				A15FF0731AA65D2200EEF172 /* Images.xcassets */,
 				A15FF0751AA65D2200EEF172 /* LaunchScreen.xib */,
+				A15FF0731AA65D2200EEF172 /* Images.xcassets */,
 				A15FF06A1AA65D2200EEF172 /* Supporting Files */,
 			);
 			path = "LE SearchTest";
@@ -561,7 +561,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/ericcauble/Documents/SDK/ParseSDK,
-					"/Users/ecauble/Documents/SDK/parse-library-1.6.4",
 					"$(PROJECT_DIR)/ParseSDK",
 				);
 				INFOPLIST_FILE = "LE SearchTest/Info.plist";
