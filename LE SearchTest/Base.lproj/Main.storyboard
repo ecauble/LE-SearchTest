@@ -1295,23 +1295,23 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="XdN-4a-gSw"/>
+                                <exclude reference="DZ7-M6-EPW"/>
+                                <exclude reference="WXL-7R-hba"/>
+                                <exclude reference="nIQ-jP-SIO"/>
                                 <exclude reference="6BY-CX-kpq"/>
                                 <exclude reference="7Ob-YA-t8Q"/>
                                 <exclude reference="kH0-OK-yuc"/>
                                 <exclude reference="qBJ-Lf-amy"/>
                                 <exclude reference="znq-6q-4sy"/>
-                                <exclude reference="Bqb-XB-3Fx"/>
-                                <exclude reference="DZ7-M6-EPW"/>
-                                <exclude reference="WXL-7R-hba"/>
-                                <exclude reference="nIQ-jP-SIO"/>
+                                <exclude reference="NOw-5b-Ico"/>
+                                <exclude reference="Ooo-kc-lHv"/>
+                                <exclude reference="Bjw-11-tSr"/>
+                                <exclude reference="ZkP-ar-aOB"/>
                                 <exclude reference="2Kw-Eb-EB1"/>
                                 <exclude reference="Q3Q-03-g3Z"/>
                                 <exclude reference="X0X-2I-1op"/>
                                 <exclude reference="aQT-tu-BUh"/>
-                                <exclude reference="Bjw-11-tSr"/>
-                                <exclude reference="ZkP-ar-aOB"/>
-                                <exclude reference="NOw-5b-Ico"/>
-                                <exclude reference="Ooo-kc-lHv"/>
+                                <exclude reference="Bqb-XB-3Fx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1325,23 +1325,23 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="XdN-4a-gSw"/>
+                                <include reference="DZ7-M6-EPW"/>
+                                <include reference="WXL-7R-hba"/>
+                                <include reference="nIQ-jP-SIO"/>
                                 <include reference="6BY-CX-kpq"/>
                                 <include reference="7Ob-YA-t8Q"/>
                                 <include reference="kH0-OK-yuc"/>
                                 <include reference="qBJ-Lf-amy"/>
                                 <include reference="znq-6q-4sy"/>
-                                <include reference="Bqb-XB-3Fx"/>
-                                <include reference="DZ7-M6-EPW"/>
-                                <include reference="WXL-7R-hba"/>
-                                <include reference="nIQ-jP-SIO"/>
+                                <include reference="NOw-5b-Ico"/>
+                                <include reference="Ooo-kc-lHv"/>
+                                <include reference="Bjw-11-tSr"/>
+                                <include reference="ZkP-ar-aOB"/>
                                 <include reference="2Kw-Eb-EB1"/>
                                 <include reference="Q3Q-03-g3Z"/>
                                 <include reference="X0X-2I-1op"/>
                                 <include reference="aQT-tu-BUh"/>
-                                <include reference="Bjw-11-tSr"/>
-                                <include reference="ZkP-ar-aOB"/>
-                                <include reference="NOw-5b-Ico"/>
-                                <include reference="Ooo-kc-lHv"/>
+                                <include reference="Bqb-XB-3Fx"/>
                             </mask>
                         </variation>
                     </view>
