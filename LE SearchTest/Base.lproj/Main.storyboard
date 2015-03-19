@@ -859,8 +859,8 @@
                     </tableView>
                     <connections>
                         <outlet property="logOutButton" destination="11l-LM-FRo" id="zAg-sv-UIK"/>
+                        <outlet property="userImage" destination="kU7-jC-Taw" id="7Mu-gw-Rll"/>
                         <outlet property="userNameLabel" destination="Baz-rT-sBd" id="INc-iw-BXg"/>
-                        <outlet property="userPhoto" destination="kU7-jC-Taw" id="Mv0-rZ-CVN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CK7-cB-RHa" userLabel="First Responder" sceneMemberID="firstResponder"/>

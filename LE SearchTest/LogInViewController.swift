@@ -32,16 +32,20 @@ class logInViewController : UIViewController {
                     {
                         Locksmith.saveData(["some key": "\(NSDate())"], forKey: self.key, inService: self.service, forUserAccount: self.userAccount)
                         self.performSegueWithIdentifier("LogInSegue", sender: self)
-                    } else {
+                    } else
+                    {
                         // The login failed. Check error to see why.
-                        
+                        println("goof happened")
                     }
                 }
-                
-            } else {
+            }
+            else
+            {
                 self.performSegueWithIdentifier("LogInSegue", sender: self)
             }
-        } else {
+        }
+        else
+        {
             self.LogInLabel.text = "All Fields Required"
         }
       }
