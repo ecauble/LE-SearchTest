@@ -61,6 +61,8 @@ class NewEventController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+       //ensure endtime is not before start time
+      
         if (segue.identifier == "showInviteVC")
         {
             var inviteView = segue.destinationViewController as InviteController;
@@ -69,6 +71,41 @@ class NewEventController: UIViewController, UITextFieldDelegate {
             inviteView.eventEnd = endTime
         }
     }
+    
+   
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String!, sender: AnyObject!) -> Bool {
+        if identifier == "showInviteVC" {
+            
+            if (endTime.description < startTime.description) {
+                println(startTime.description)
+                let alert = UIAlertView()
+                alert.title = "Event Time"
+                alert.message = "Please start and end time for the event"
+                alert.addButtonWithTitle("Ok")
+                alert.show()
+                endTimeTextField.backgroundColor = UIColor.redColor()
+                return false
+            }
+            if(eventTitleTextField.text == ""){
+                let alert = UIAlertView()
+                alert.title = "Event Title"
+                alert.message = "Please give your event \n a title (ex: Pizza Party!)"
+                alert.addButtonWithTitle("Ok")
+                alert.show()
+                eventTitleTextField.backgroundColor = UIColor.redColor()
+                return false
+             }
+                
+            else {
+                return true
+            }
+        }
+        
+        // by default, transition
+        return true
+    }
+    
 
     //returns a String in the correct date format
     func formatDate(eventTime : NSDate) -> String{
