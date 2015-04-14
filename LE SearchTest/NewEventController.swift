@@ -63,7 +63,7 @@ class NewEventController: UIViewController, UITextFieldDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showInviteVC")
         {
-            var inviteView = segue.destinationViewController as InviteController;
+            var inviteView = segue.destinationViewController as! InviteController;
             inviteView.eventTitle = eventTitleTextField.text
              inviteView.eventStart = startTime
             inviteView.eventEnd = endTime

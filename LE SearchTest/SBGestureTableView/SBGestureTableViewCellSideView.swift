@@ -10,22 +10,19 @@ import UIKit
 
 class SBGestureTableViewCellSideView: UIView {
 
-    let iconImageView: UIImageView!
+    var iconImageView: UIImageView!
 
-    override init() {
-        super.init()
-    }
 
-    init(iconImageView: UIImageView) {
-        self.iconImageView = iconImageView
-        super.init()
+   convenience init(iconImageView: UIImageView) {
+       // self.iconImageView = iconImageView
+        self.init()
         addSubview(iconImageView)
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        iconImageView = UIImageView()
-        addSubview(iconImageView)
+//        iconImageView = UIImageView()
+//        addSubview(iconImageView)
     }
     
     required init(coder aDecoder: NSCoder) {

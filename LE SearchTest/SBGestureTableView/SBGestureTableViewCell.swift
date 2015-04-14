@@ -119,7 +119,7 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
     
     override func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
         if gestureRecognizer.isKindOfClass(UIPanGestureRecognizer) {
-            let panGestureRecognizer = gestureRecognizer as UIPanGestureRecognizer
+            let panGestureRecognizer = gestureRecognizer as! UIPanGestureRecognizer
             let velocity = panGestureRecognizer.velocityInView(self)
             let horizontalLocation = panGestureRecognizer.locationInView(self).x
             if fabs(velocity.x) > fabs(velocity.y)

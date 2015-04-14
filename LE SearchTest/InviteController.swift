@@ -37,7 +37,7 @@ class InviteController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell",
-            forIndexPath: indexPath) as UITableViewCell
+            forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = nameList[indexPath.row]
         cell.imageView?.image = UIImage(named: imgList[indexPath.row])
         return cell

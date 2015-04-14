@@ -113,7 +113,7 @@ class DatePickerDialog: UIView {
     private func close() {
         let currentTransform = self.dialogView.layer.transform
         
-        let startRotation = (self.valueForKeyPath("layer.transform.rotation.z") as? NSNumber)? as? Double ?? 0.0
+        let startRotation = (self.valueForKeyPath("layer.transform.rotation.z") as? NSNumber) as? Double ?? 0.0
         let rotation = CATransform3DMakeRotation((CGFloat)(-startRotation + M_PI * 270 / 180), 0, 0, 0)
         
         self.dialogView.layer.transform = CATransform3DConcat(rotation, CATransform3DMakeScale(1, 1, 1))
@@ -201,7 +201,7 @@ class DatePickerDialog: UIView {
     private func addButtonsToView(container: UIView) {
         let buttonWidth = container.bounds.size.width / 2
         
-        self.cancelButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        self.cancelButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         self.cancelButton.frame = CGRectMake(
             0,
             container.bounds.size.height - kDatePickerDialogDefaultButtonHeight,
@@ -217,7 +217,7 @@ class DatePickerDialog: UIView {
         self.cancelButton.addTarget(self, action: "buttonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
         container.addSubview(self.cancelButton)
         
-        self.doneButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        self.doneButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         self.doneButton.frame = CGRectMake(
             buttonWidth,
             container.bounds.size.height - kDatePickerDialogDefaultButtonHeight,

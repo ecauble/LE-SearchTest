@@ -40,10 +40,10 @@ class DetailViewController: UIViewController {
         itemDict = itemDetail.placemark.addressDictionary
         
         //extract values from the dictionary
-        var street : String = itemDict.valueForKey("Street") as String
-        var city : String = itemDict.valueForKey("City") as String
-        var state : String = itemDict.valueForKey("State") as String
-        var zip : String = itemDict.valueForKey("ZIP") as String
+        var street : String = itemDict.valueForKey("Street") as! String
+        var city : String = itemDict.valueForKey("City") as! String
+        var state : String = itemDict.valueForKey("State") as! String
+        var zip : String = itemDict.valueForKey("ZIP") as! String
         locationLabel.text = "\(street), \(city), \(state) \(zip)"
         //TODO: change to call, or format number to (xxx) xxx-xxxx
         phoneNumberButton.setTitle(itemDetail.phoneNumber, forState: nil)

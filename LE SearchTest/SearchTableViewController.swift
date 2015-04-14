@@ -84,7 +84,7 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //ask for a reusable cell from the tableview, the tableview will create a new one if it doesn't have any
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell") as SBGestureTableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell") as!  SBGestureTableViewCell
         let size = CGSizeMake(30, 30)
         cell.firstLeftAction = SBGestureTableViewCellAction(icon: checkIcon.imageWithSize(size), color: greenColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
         cell.secondLeftAction = SBGestureTableViewCellAction(icon: closeIcon.imageWithSize(size), color: greenColor, fraction: 0.6, didTriggerBlock: removeCellBlock)
@@ -92,10 +92,10 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
         cell.secondRightAction = SBGestureTableViewCellAction(icon: clockIcon.imageWithSize(size), color: redColor, fraction: 0.6, didTriggerBlock: removeCellBlock)
         cell.nameLabel.text = ("\(matchingItems[indexPath.row].name)")
         itemDict = matchingItems[indexPath.row].placemark.addressDictionary
-        var street : String = itemDict.valueForKey("Street") as String
-        var city : String = itemDict.valueForKey("City") as String
-        var state : String = itemDict.valueForKey("State") as String
-        var zip : String = itemDict.valueForKey("ZIP") as String
+        var street : String = itemDict.valueForKey("Street") as!  String
+        var city : String = itemDict.valueForKey("City") as!  String
+        var state : String = itemDict.valueForKey("State") as!  String
+        var zip : String = itemDict.valueForKey("ZIP") as!  String
         cell.addressLabel.text = "\(street), \(city), \(state) \(zip)"
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         var distanceInMeters : Double = self.userLocationManger.location.distanceFromLocation(matchingItems[indexPath.row].placemark.location)
@@ -109,7 +109,7 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
     }
     
     func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
-        let scopes = self.searchDisplayController!.searchBar.scopeButtonTitles as [String]
+        let scopes = self.searchDisplayController!.searchBar.scopeButtonTitles as!  [String]
         let selectedScope = scopes[self.searchDisplayController!.searchBar.selectedScopeButtonIndex] as String
         self.filterContentForSearchText(searchString, scope: selectedScope)
         return true
@@ -132,7 +132,7 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showDetailVC")
         {
-            var detailView = segue.destinationViewController as DetailViewController;
+            var detailView = segue.destinationViewController as!  DetailViewController;
             detailView.itemDetail = self.data
          }
     }
@@ -174,7 +174,7 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
             else
             {
                 //add our MKMapItems items to the matchingItems array
-                for item in response.mapItems as [MKMapItem!]
+                for item in response.mapItems as! [MKMapItem!]
                 {
                      self.matchingItems.append(item)
                 }
