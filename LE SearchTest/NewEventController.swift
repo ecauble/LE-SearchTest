@@ -82,11 +82,7 @@ class NewEventController: UIViewController, UITextFieldDelegate {
         var time = "\(dateFormatter.stringFromDate(eventTime)), \(timeFormatter.stringFromDate(eventTime))"
         return time
     }
-    func textFieldShouldReturn(textField: UITextField!) -> Bool  
-    {
-        textField.resignFirstResponder()
-        return true;
-    }
+ 
     
     func DismissKeyboard(){
         //Causes the view (or one of its embedded text fields) to resign the first responder status.

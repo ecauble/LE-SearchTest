@@ -79,8 +79,8 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
         addGestureRecognizer(panGestureRecognizer)
     }
     
-    override init() {
-        super.init()
+    convenience init() {
+        self.init()
         setup()
     }
 
@@ -89,8 +89,8 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
         setup()
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    convenience init(frame: CGRect) {
+        self.init(frame: frame)
         setup()
     }
     

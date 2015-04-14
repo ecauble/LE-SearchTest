@@ -26,7 +26,7 @@ class DatePickerDialog: UIView {
     private var callback: ((date: NSDate) -> Void)!
     
     /* Overrides */
-    override init() {
+     init() {
         super.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "deviceOrientationDidChange:", name: UIDeviceOrientationDidChangeNotification, object: nil)

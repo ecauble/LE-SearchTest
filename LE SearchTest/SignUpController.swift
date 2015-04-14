@@ -42,14 +42,14 @@ class SignUpController: UIViewController {
             user.password = userPassword.text
             user.email = userEmail.text
             user.signUpInBackgroundWithBlock {
-                (succeeded: Bool!, error: NSError!) -> Void in
+                (succeeded: Bool, error: NSError!) -> Void in
                 if error == nil {
                     var number = PFObject(className: "UserInfo")
                     number.setObject(self.userName.text, forKey: "userName")
    
                     number.saveInBackgroundWithBlock {
-                        (success: Bool!, error: NSError!) -> Void in
-                        if (success != nil) {
+                        (success: Bool, error: NSError!) -> Void in
+                        if success {
                             println(("Object created with id: \(number.objectId)"))
                         } else {
                             println(" ", error)

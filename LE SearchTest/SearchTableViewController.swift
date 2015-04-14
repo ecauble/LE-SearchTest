@@ -57,7 +57,7 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
         removeCellBlock = {(tableView: SBGestureTableView, cell: SBGestureTableViewCell) -> Void in
             let indexPath = tableView.indexPathForCell(cell)
             self.matchingItems.removeAtIndex(indexPath!.row)
-            tableView.removeCell(cell, duration: 0.3, completion: nil)
+            tableView.removeACell(cell, duration: 0.3, completion: nil)
         }
        
        
@@ -108,14 +108,14 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
             //return categoryMatch && (stringMatch != nil)
     }
     
-    func searchDisplayController(controller: UISearchDisplayController!, shouldReloadTableForSearchString searchString: String!) -> Bool {
+    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String!) -> Bool {
         let scopes = self.searchDisplayController!.searchBar.scopeButtonTitles as!  [String]
         let selectedScope = scopes[self.searchDisplayController!.searchBar.selectedScopeButtonIndex] as String
         self.filterContentForSearchText(searchString, scope: selectedScope)
         return true
     }
     
-    func searchDisplayController(controller: UISearchDisplayController!,
+    func searchDisplayController(controller: UISearchDisplayController,
         shouldReloadTableForSearchScope searchOption: Int) -> Bool {
             return true
     }

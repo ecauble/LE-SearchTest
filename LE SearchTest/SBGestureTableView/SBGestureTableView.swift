@@ -200,7 +200,7 @@ class SBGestureTableView: UITableView, UIGestureRecognizerDelegate {
                     let visibleRows: NSArray = self.indexPathsForVisibleRows()!
                     let mutableRows = visibleRows.mutableCopy() as! NSMutableArray
                     mutableRows.removeObject(indexPath)
-                    self.reloadRowsAtIndexPaths(mutableRows, withRowAnimation: UITableViewRowAnimation.None)
+                    self.reloadRowsAtIndexPaths(mutableRows as [AnyObject], withRowAnimation: UITableViewRowAnimation.None)
                     self.currentLocationIndexPath = nil
                     self.draggingView = nil
             })
@@ -252,7 +252,8 @@ class SBGestureTableView: UITableView, UIGestureRecognizerDelegate {
     }
  
     
-    func removeCell(cell: SBGestureTableViewCell, duration: NSTimeInterval, completion:(() -> Void)?) {
+     func removeACell(cell: SBGestureTableViewCell, duration: NSTimeInterval, completion:(() -> Void)?)
+    {
         let indexPath = self.indexPathForCell(cell)!
         self.removeCell(cell, indexPath: indexPath, duration: duration, completion: completion)
     }
