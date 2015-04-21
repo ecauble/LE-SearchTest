@@ -65,7 +65,7 @@ class NewEventController: UIViewController, UITextFieldDelegate {
         {
             var inviteView = segue.destinationViewController as! InviteController;
             inviteView.eventTitle = eventTitleTextField.text
-             inviteView.eventStart = startTime
+            inviteView.eventStart = startTime
             inviteView.eventEnd = endTime
         }
     }

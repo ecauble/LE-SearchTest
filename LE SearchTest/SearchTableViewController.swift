@@ -24,7 +24,7 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
     var userLocationManger = CLLocationManager()
     var data = MKMapItem()
     let checkIcon = FAKIonIcons.iosComposeIconWithSize(30)
-    let closeIcon = FAKIonIcons.iosComposeIconWithSize(30)
+     let closeIcon = FAKIonIcons.iosComposeIconWithSize(30)
     let composeIcon = FAKIonIcons.iosComposeIconWithSize(30)
     let clockIcon = FAKIonIcons.iosComposeIconWithSize(30)
     let greenColor = UIColor(red: 85.0/255, green: 213.0/255, blue: 80.0/255, alpha: 1)
@@ -59,8 +59,6 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
             self.matchingItems.removeAtIndex(indexPath!.row)
             tableView.removeACell(cell, duration: 0.3, completion: nil)
         }
-       
-       
     }
  
     //MARK: - FontKitAwesome
@@ -84,29 +82,31 @@ class SearchTableViewController: UITableViewController,UITableViewDataSource, UI
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //ask for a reusable cell from the tableview, the tableview will create a new one if it doesn't have any
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell") as!  SBGestureTableViewCell
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell") as?  SBGestureTableViewCell
         let size = CGSizeMake(30, 30)
-        cell.firstLeftAction = SBGestureTableViewCellAction(icon: checkIcon.imageWithSize(size), color: greenColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
-        cell.secondLeftAction = SBGestureTableViewCellAction(icon: closeIcon.imageWithSize(size), color: greenColor, fraction: 0.6, didTriggerBlock: removeCellBlock)
-        cell.firstRightAction = SBGestureTableViewCellAction(icon: composeIcon.imageWithSize(size), color: redColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
-        cell.secondRightAction = SBGestureTableViewCellAction(icon: clockIcon.imageWithSize(size), color: redColor, fraction: 0.6, didTriggerBlock: removeCellBlock)
-        cell.nameLabel.text = ("\(matchingItems[indexPath.row].name)")
+        cell!.firstLeftAction = SBGestureTableViewCellAction(icon: checkIcon.imageWithSize(size), color: greenColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
+        cell!.secondLeftAction = SBGestureTableViewCellAction(icon: closeIcon.imageWithSize(size), color: greenColor, fraction: 0.6, didTriggerBlock: removeCellBlock)
+        cell!.firstRightAction = SBGestureTableViewCellAction(icon: composeIcon.imageWithSize(size), color: redColor, fraction: 0.3, didTriggerBlock: removeCellBlock)
+        cell!.secondRightAction = SBGestureTableViewCellAction(icon: clockIcon.imageWithSize(size), color: redColor, fraction: 0.6, didTriggerBlock: removeCellBlock)
+        cell!.nameLabel.text = ("\(matchingItems[indexPath.row].name)")
         itemDict = matchingItems[indexPath.row].placemark.addressDictionary
         var street : String = itemDict.valueForKey("Street") as!  String
         var city : String = itemDict.valueForKey("City") as!  String
         var state : String = itemDict.valueForKey("State") as!  String
         var zip : String = itemDict.valueForKey("ZIP") as!  String
-        cell.addressLabel.text = "\(street), \(city), \(state) \(zip)"
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        cell!.addressLabel.text = "\(street), \(city), \(state) \(zip)"
+        cell!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         var distanceInMeters : Double = self.userLocationManger.location.distanceFromLocation(matchingItems[indexPath.row].placemark.location)
         var distanceInMiles : Double = ((distanceInMeters.description as String).doubleValue * 0.00062137)
-        cell.distanceLabel.text = "\(distanceInMiles.string(2)) miles away"
-        return cell
+        cell!.distanceLabel.text = "\(distanceInMiles.string(2)) miles away"
+        return cell!
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
             //return categoryMatch && (stringMatch != nil)
     }
+    
+   
     
     func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String!) -> Bool {
         let scopes = self.searchDisplayController!.searchBar.scopeButtonTitles as!  [String]

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1DCA796C-E79A-4556-87EC-E7BA2AC2B86A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>LE SearchTest</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5516275DA355748113956676B4187571342E79B6</key>
 		<string>https://github.com/oopiedoopie/LE-SearchTest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LE SearchTest.xcodeproj</string>
+	<string>LE SearchTest.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5516275DA355748113956676B4187571342E79B6</key>

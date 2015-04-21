@@ -291,8 +291,8 @@ class SBGestureTableView: UITableView, UIGestureRecognizerDelegate {
         
         UIView.animateWithDuration(duration * cell.percentageOffsetFromCenter(), animations: { () -> Void in
             cell.center = CGPointMake(cell.frame.size.width/2 + (cell.frame.origin.x > 0 ? -bounce : bounce), cell.center.y)
-            cell.leftSideView.iconImageView.alpha = 0
-            cell.rightSideView.iconImageView.alpha = 0
+            cell.leftSideView.iconImageView?.alpha = 0
+            cell.rightSideView.iconImageView?.alpha = 0
             }, completion: {(done) -> Void in
                 UIView.animateWithDuration(duration/2, animations: { () -> Void in
                     cell.center = CGPointMake(cell.frame.size.width/2, cell.center.y)

@@ -13,6 +13,7 @@ class logInViewController : UIViewController {
     let service = "Locksmith"
     let userAccount = "LocksmithUser"
     let key = "myKey"
+    var user1 = PFUser.currentUser()
     
     @IBOutlet var LogInLabel: UILabel!
     @IBOutlet var logInUsername: UITextField!
@@ -20,6 +21,9 @@ class logInViewController : UIViewController {
     @IBOutlet var logInSavePasswordLabel: UILabel!
     @IBOutlet var logInsavePasswordSwitch: UISwitch!
     @IBAction func logInActionButton(sender: AnyObject) {
+        
+        
+     
         
         if logInUsername.text != "" && logInPassword.text != ""
         {

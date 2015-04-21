@@ -159,24 +159,24 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
         if let action = action {
             if frame.origin.x > 0 {
                 leftSideView.backgroundColor = action.color
-                leftSideView.iconImageView.image = action.icon
+                leftSideView.iconImageView?.image = action.icon
             } else if frame.origin.x < 0 {
                 rightSideView.backgroundColor = action.color
-                rightSideView.iconImageView.image = action.icon
+                rightSideView.iconImageView?.image = action.icon
             }
         } else {
             if frame.origin.x > 0 {
                 leftSideView.backgroundColor = actionNormalColor
-                leftSideView.iconImageView.image = firstLeftAction!.icon
+                leftSideView.iconImageView?.image = firstLeftAction!.icon
             } else if frame.origin.x < 0 {
                 rightSideView.backgroundColor = actionNormalColor
-                rightSideView.iconImageView.image = firstRightAction!.icon
+                rightSideView.iconImageView?.image = firstRightAction!.icon
             }
         }
-        if let image = leftSideView.iconImageView.image {
+        if let image = leftSideView.iconImageView?.image {
             leftSideView.iconImageView.alpha = frame.origin.x / (actionIconsMargin*2 + image.size.width)
         }
-        if let image = rightSideView.iconImageView.image {
+        if let image = rightSideView.iconImageView?.image {
             rightSideView.iconImageView.alpha = -(frame.origin.x / (actionIconsMargin*2 + image.size.width))
         }
         if currentAction != action {
@@ -195,8 +195,8 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
     }
 
     func setupSideViews() {
-        leftSideView.iconImageView.contentMode = actionIconsFollowSliding ? UIViewContentMode.Right : UIViewContentMode.Left
-        rightSideView.iconImageView.contentMode = actionIconsFollowSliding ? UIViewContentMode.Left : UIViewContentMode.Right
+        leftSideView.iconImageView?.contentMode = actionIconsFollowSliding ? UIViewContentMode.Right : UIViewContentMode.Left
+        rightSideView.iconImageView?.contentMode = actionIconsFollowSliding ? UIViewContentMode.Left : UIViewContentMode.Right
         superview?.insertSubview(leftSideView, atIndex: 0)
         superview?.insertSubview(rightSideView, atIndex: 0)
     }
@@ -225,13 +225,17 @@ class SBGestureTableViewCell: UITableViewCell, UIGestureRecognizerDelegate {
         }
     }
     
-    func updateSideViews() {
+    func updateSideViews()
+    {
+        
+        
         leftSideView.frame = CGRectMake(0, frame.origin.y, frame.origin.x, frame.size.height)
-        if let image = leftSideView.iconImageView.image {
+       
+         if var image = leftSideView.iconImageView?.image {
             leftSideView.iconImageView.frame = CGRectMake(actionIconsMargin, 0, max(image.size.width, leftSideView.frame.size.width - actionIconsMargin*2), leftSideView.frame.size.height)
         }
         rightSideView.frame = CGRectMake(frame.origin.x + frame.size.width, frame.origin.y, frame.size.width - (frame.origin.x + frame.size.width), frame.size.height)
-        if let image = rightSideView.iconImageView.image {
+        if var image = rightSideView.iconImageView?.image {
             rightSideView.iconImageView.frame = CGRectMake(rightSideView.frame.size.width - actionIconsMargin, 0, min(-image.size.width, actionIconsMargin*2 - rightSideView.frame.size.width), rightSideView.frame.size.height)
         }
     }
